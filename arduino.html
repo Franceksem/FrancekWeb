@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .tile {cursor: pointer; margin-left: 20px;padding-bottom: 200px;padding-left: 5%;padding-right: 5%;border: 5px solid}
-        .tile:hover{background-color: darkgray;}
-        h1 {text-align:center;}
-        body {background-color: rgb(26, 141, 141);}
-        div {border: solid;justify-content: center;align-items: center;}
+<head>
+  <style>
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    justify-content: center;
+    gap: 20px;
+    }
+    
 
-    </style>
-    <body>
-        <ul>
-            <div>fart</div>
-            <div>fart</div>
-            <div>fart</div>
-        </ul>
-    </body>
+    .box {
+      background: rgb(137, 189, 171);
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+      width: 85%;
+      height: 150px;
+      font-weight: bold;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    body {
+        background-color: rgb(127, 201, 226);;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+        text-decoration: none; background-color: white; color: black;
+        padding: 5px;
+    }
+
+  </style>
+</head>
+<body>
+    <a href="Index.html">Back</a>
+    <h1>
+        Arduino
+    </h1>
+<div class="grid">
+  <div class="box">ESP32</div>
+  <div class="box">Robotic arm</div>
+  <div class="box">Gaming console</div>
+  <div class="box">4</div>
+  <div class="box">4</div>
+  <div class="box">4</div>
+  <div class="box">4</div>
+</div>
+
+</body>
 </html>
